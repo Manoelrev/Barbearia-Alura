@@ -1,0 +1,153 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: lightgray;
+    padding: 20px 0;
+}
+
+header div {
+    position: relative;
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    padding: 20px;
+}
+
+nav a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+}
+nav a:hover:not(.select) {
+    color: orange;
+    text-decoration: underline;
+}
+
+header .select{
+    color: gray;
+}
+
+main{
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+main form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input_padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 20px 0px;
+}
+
+thead{
+    background: gray;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px black solid;
+    padding: 8px 15px;
+}
+
+footer{
+    background-image:url("../imagens/bg.jpg");
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer p{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 480px){
+    header div, main, footer, main ul{
+        width: auto;
+    }
+    header{
+        text-align: center;
+    }
+    nav, nav li{
+        position:static;
+        top: auto;
+        padding: 0;
+        margin: auto;
+    }
+
+    main{
+        text-align: center;
+    }
+
+    main li{
+        width: 97%;
+    }
+    
+    form{
+        text-align: center;
+    }
+
+    fieldset label
+    {
+        text-align: justify;
+    }
+
+    form input:not(.enviar, #check), form textarea, table, .input_padrao, .checkbox{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0)
+    }
+}

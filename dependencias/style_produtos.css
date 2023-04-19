@@ -1,0 +1,129 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: lightgray;
+    padding: 20px 0;
+}
+
+header div {
+    position: relative;
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    padding: 20px;
+}
+
+nav a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+}
+nav a:hover:not(.select) {
+    color: orange;
+    text-decoration: underline;
+}
+
+header .select{
+    color: gray;
+}
+
+main ul{
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+main li{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 30%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+li h2{
+    white-space: nowrap;
+}
+
+li img{
+    width: 100%;
+}
+
+main li:hover{
+    border: 5px solid yellow;
+    padding: 40px 20px;
+}
+
+main li:active{
+    border: 5px solid green;
+}
+
+main li:hover h2{
+    font-size: 34px;
+}
+
+main h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main .produto_descricao{
+    font-size: 18px;
+}
+
+main .produto_preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+footer{
+    background-image:url("../imagens/bg.jpg");
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer p{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 480px){
+    header div, main, footer, main ul{
+        width: auto;
+    }
+    header{
+        text-align: center;
+    }
+    nav, nav li{
+        position:static;
+        top: auto;
+        padding: 0;
+        margin: auto;
+    }
+
+    main li{
+        width: 97%;
+    }
+}
