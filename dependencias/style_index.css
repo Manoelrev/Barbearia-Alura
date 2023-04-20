@@ -172,7 +172,7 @@ section .video{
 }
 
 footer{
-    background-image:url("../imagens/bg.jpg");
+    background-image:url("imagens/bg.jpg");
     text-align: center;
     padding: 40px 0;
 }
